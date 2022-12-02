@@ -8,7 +8,6 @@ let urlVids = []
 
 
 if (readlineSync.keyInYN('Deseja adicionar links youtube para download? ')) {
-    // 'Y' key was pressed.
     let qtdLinks = Number(readlineSync.question('Quantos links deseja adicionar? '))
 
     for (let l=1; l<=qtdLinks; l++) {
