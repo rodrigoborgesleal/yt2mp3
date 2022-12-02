@@ -27,9 +27,7 @@ if (readlineSync.keyInYN('Deseja adicionar links youtube para download? ')) {
 
 
 async function getMP3(urls) {
-
-    fs.mkdirSync('./audios')
-    
+    if(!fs.existsSync('./audios')) fs.mkdirSync('./audios')
     await urls.forEach(async vid => {
         await downloadSong(vid, {
             getTags: false,
