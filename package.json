@@ -1,0 +1,21 @@
+{
+  "name": "yt2mp3",
+  "version": "1.0.0",
+  "description": "Conversor Youtube para MP3",
+  "bin": "index.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rodrigo Borges",
+  "license": "ISC",
+  "pkg": {
+    "assets": [ "node_modules/**/*", "./" ],
+    "targets": [ "node10-win-x64" ]
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10",
+    "ytdl-core": "^4.11.2",
+    "ytdl-mp3": "^2.0.3"
+  }
+}
